@@ -7,6 +7,8 @@ DBNAME=commerce ./scripts/resetdb.sh assets/produtos
 
 teste local
 ./scripts/evaluate.sh
+
+https://github.com/tryber/sd-08-mongodb-commerce/pull/29
 -->
 
 ### Termos e acordos
