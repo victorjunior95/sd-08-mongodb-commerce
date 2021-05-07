@@ -1,0 +1,4 @@
+db.produtos.find(
+  {},
+  {},
+);
