@@ -10,7 +10,7 @@ db.produtos.createIndex(
 db.produtos.countDocuments(
   {
     $text: {
-      $search: "/"feito com/"",
+      $search: "\"feito com\"",
     },
   },
 );
