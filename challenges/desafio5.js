@@ -1,4 +1,4 @@
-db.produtos.updateOne({ nome: { $nin: ["McChicken"] } },
+db.produtos.updateMany({ nome: { $ne: "McChicken" } },
 { $addToSet: { ingredientes: "ketchup" } });
 
 db.produtos.find({},
