@@ -1,9 +1,6 @@
-// 17 - Conte quantos documentos contêm as palavras frango e hamburguer utilizando o operador $text.
-// Para isso, escreva no arquivo desafio17.js duas queries, nesta ordem:
+db.produtos.createIndex(
+  { descricao: "text" },
+  { name: "desafio17", default_language: "portuguese" }
+);
 
-// 1. Crie uma query que faça a criação de um índice do tipo text no campo descricao com o idioma padrão portuguese.
-db.produtos.createIndex({ descricao: "text" },
- { name: "desafio17", default_language: "portuguese" });
-
-// 2. Crie uma query que retorne a quantidade de documentos que contêm as palavras frango e hamburguer utilizando o operador $text.
 db.produtos.count({ $text: { $search: "frango hamburguer" } });
