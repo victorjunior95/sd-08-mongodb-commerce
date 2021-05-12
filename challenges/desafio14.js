@@ -7,7 +7,8 @@ db.produtos.updateMany(
         tipo: "sódio",
         percentual:
         {
-          $gte: 40,
+          $gt: 20,
+          $lt: 40,
         },
       },
     },
