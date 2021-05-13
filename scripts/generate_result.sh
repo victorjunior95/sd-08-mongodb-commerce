@@ -27,7 +27,7 @@ print_results() {
   printf "\n======================= RESULTS =======================\n"
 }
 
-# Print tests evaluation
+Print tests evaluation
 for entry in "$TRYBE_DIR/expected-results"/*
 do
   scripts/resetdb.sh "$DB_RESTORE_DIR"
