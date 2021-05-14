@@ -3,10 +3,8 @@ db.produtos.updateMany({
       $elemMatch: {
           tipo: "sódio",
           percentual: { 
-            $and: {
-              $gt: 20,
-              $lt: 40,
-            },
+            $gt: 20,
+            $lt: 40,
           },
       },
   },
