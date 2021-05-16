@@ -15,7 +15,7 @@ o obj. vazio serve para atualizar todos os documentos da seleção. */
 // https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/
 
 /* o operador $set substitui os valores de um campo.
-sintax: { $set: { <field1>: <value1>, ...<fieldN>: <valueN> } }*/
+sintax: { $set: { <field1>: <value1>, ...<fieldN>: <valueN> } } */
 // https://docs.mongodb.com/manual/reference/operator/update/set/
 
 // para a relização desta parte, consultei o repositorio de Arnaelcio
