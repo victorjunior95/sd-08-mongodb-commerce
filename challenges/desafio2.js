@@ -6,3 +6,6 @@ Crie uma query que adicione o campo valorUnitario em todos os documentos em que 
 
 Crie uma query que retorne o nome e valorUnitario de todos os produtos.
 */
+db.produtos.updateMany({ 
+  valorUnitario: { $exists: false } }, { $set: { valorUnitario: NumberDecimal("0.00") }, 
+});
