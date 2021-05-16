@@ -6,3 +6,9 @@ Crie uma query que adicione ketchup aos ingredientes para todos os sanduíches m
 
 Crie uma query que retorne o nome e ingredientes de todos os documentos.
 */
+db.produtos.updateMany(
+  { nome: { $ne: "McChicken" } }, 
+  { $addToSet: { ingredientes: "ketchup" } },
+);
+
+db.produtos.find({ }, { nome: true, ingredientes: true, _id: false });
