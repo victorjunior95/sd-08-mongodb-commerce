@@ -10,9 +10,10 @@ Crie uma query que incremente o valor do campo avaliacao em 3 em todos os sandu√
 
 Crie uma query que retorne o nome e avaliacao de todos os sandu√≠ches.
 */
-db.produtos.updateMany({ 
-  avaliacao: { $exists: false } }, { $set: { avaliacao: NumberInt("0") }, 
-});
+db.produtos.updateMany(
+  { avaliacao: { $exists: false } },
+  { $set: { avaliacao: NumberInt("0") } },
+);
 
 db.produtos.updateMany(
   { tags: { $in: ["bovino"] } },
