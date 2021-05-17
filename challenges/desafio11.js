@@ -16,10 +16,7 @@ db.produtos.updateMany(
     <update>,
     {
       upsert: <boolean>,
-      writeConcern: <document>,
-      collation: <document>,
-      arrayFilters: [ <filterdocument1>, ... ], -> é aqui que fica o sort
-      hint:  <document|string>        // Available starting in MongoDB 4.2.1
+      writeConcern: <document>,] } } },
     }
  ) */
 db.produtos.find({}, { _id: 0, nome: 1, tags: 1 });
