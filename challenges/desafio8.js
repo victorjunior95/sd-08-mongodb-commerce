@@ -6,4 +6,4 @@ db.produtos.updateMany(
 // { $pop: { <field>: <-1 | 1>, ... } }
 // https://docs.mongodb.com/manual/reference/operator/update/pop/#mongodb-update-up.-pop
 
-db.produtos.find({}, { _id: false, nome: true, ingredientes: true });
+db.produtos.find({}, { _id: 0, nome: 1, ingredientes: 1 });
