@@ -6,3 +6,6 @@ Crie uma query que faça a remoção do campo curtidas do item Big Mac.
 
 Crie uma query que retorne o nome e curtidas de todos os documentos.
 */
+db.produtos.updateMany({ nome: "Big Mac" }, { $unset: { curtidas: "" } });
+
+db.produtos.find({ }, { nome: true, curtidas: true, _id: false });
