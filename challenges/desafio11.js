@@ -7,7 +7,7 @@ db.produtos.updateMany(
 // https://docs.mongodb.com/manual/reference/operator/update/push/#mongodb-update-up.-push
 
 // { $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }
-// order: 1 -> ascendente , 2 -> descendente
+// order: 1 -> ascendente , -1 -> descendente
 // https://docs.mongodb.com/manual/reference/operator/aggregation/sort/
 
 // sort dentro do updateMany:
