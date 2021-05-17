@@ -19,4 +19,6 @@ db.produtos.updateMany(
       writeConcern: <document>,] } } },
     }
  ) */
+
+ // sort -> update operator modifier. ( push is update operator )
 db.produtos.find({}, { _id: 0, nome: 1, tags: 1 });

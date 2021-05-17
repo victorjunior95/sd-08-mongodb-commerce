@@ -1,0 +1,1 @@
+db.produtos.aggregate([ {$sort: {valoresNutricionais:{ percentual: -1 }}}]) 
