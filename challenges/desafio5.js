@@ -4,7 +4,7 @@ db.produtos.updateMany(
   );
 //  consultei o repositório de Arnaelcio para a parte do condicional(addTSet).
 //  https://github.com/tryber/sd-08-mongodb-commerce/pull/71/files 
-// { $addToSet: { <field1>: <value1>, ... } } adiciona num um campo um valor, 
+// { $addToSet: { <field1>: <value1>, ... } } adiciona um valor num campo, 
 // caso ele nao faça parte do campo.
 // https://docs.mongodb.com/manual/reference/operator/update/addToSet/
   
