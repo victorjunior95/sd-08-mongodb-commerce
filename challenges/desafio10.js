@@ -1,0 +1,13 @@
+db.produtos.updateMany({}, { $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] } });
+
+db.produtos.updateMany({ nome: "Big Mac" }, { $inc: { "vendasPorDia.3": 60 } });
+// o x em array.x representa o índice do array
+// consultei o repositório de Arnaelcio para esta parte.
+// https://github.com/tryber/sd-08-mongodb-commerce/pull/71/files 
+
+db.produtos.updateMany(
+    { tags: { $in: ["bovino", "pão"] } },
+    { $inc: { "vendasPorDia.6": 120 } },
+);
+
+db.produtos.find({}, { _id: 0, nome: 1, vendasPorDia: 1 });
