@@ -1,7 +1,7 @@
 db.produtos.updateMany(
     {},
     { $push: { tags: { $each: ["combo", "tasty"] } } },
-    { $sort: { tags: 1 } }
+    { $sort: { tags: 1 } },
 );
 //  { $push: { <field1>: { <modifier1>: <value1>, ... }, ... } }
 //  modifier $each -> adiciona varios valores no campo da matriz
