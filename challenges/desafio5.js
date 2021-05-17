@@ -8,5 +8,4 @@ db.produtos.updateMany(
 // caso ele nao faça parte do campo.
 // https://docs.mongodb.com/manual/reference/operator/update/addToSet/
   
-  
 db.produtos.find({}, { _id: 0, nome: 1, ingredientes: 1 });
