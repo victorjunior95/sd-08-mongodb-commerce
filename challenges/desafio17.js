@@ -15,4 +15,4 @@
 
 db.produtos.createIndex({ text: "text" });
 
-db.produtos.find({ $text: { $search: "frango hamburguer", $caseSensitive: false }, }).count();
+db.produtos.find({ $text: { $search: "frango hamburguer", $caseSensitive: false } }).count();
