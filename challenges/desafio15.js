@@ -1,5 +1,3 @@
-db.produtos.createIndex({ nome: "text" });
-
-db.produtos.find(
-  { $text: { $search: "Mc" } },
-).count();
+db.produtos.count(
+  { nome: { $regex: /mc/i } },
+);
