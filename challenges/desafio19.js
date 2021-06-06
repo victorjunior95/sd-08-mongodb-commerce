@@ -3,7 +3,7 @@
 //   Query A: Renomeia o campo descricao para descricaoSite em todos os documentos
 db.produtos.updateMany(
   {},
-  { $rename: { descricao: "descricaoSite" } }
+  { $rename: { descricao: "descricaoSite" } },
 );
 
 //   Query B: Retorna o nome, descricao e descricaoSite de todos os documentos
@@ -14,5 +14,5 @@ db.produtos.find(
     nome: 1,
     descricao: 1,
     descricaoSite: 1,
-  }
+  },
 );

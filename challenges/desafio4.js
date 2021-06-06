@@ -4,7 +4,7 @@
 //     Obs. Para a data corrente, use o tipo Date
 db.produtos.updateOne(
   { nome: "Big Mac" },
-  { $currentDate: { ultimaModificacao: { $type: "date" } }},
+  { $currentDate: { ultimaModificacao: { $type: "date" } } },
 );
 
 //   Query B: Retorna o nome de todos os documentos em que o campo ultimaModificacao existe

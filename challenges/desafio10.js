@@ -28,6 +28,6 @@ db.produtos.find(
   {
     _id: 0,
     nome: 1,
-    vendasPorDia: 1
-  }
+    vendasPorDia: 1,
+  },
 );
