@@ -1,4 +1,6 @@
-db.produtos.updateMany({}, {
+db.produtos.updateMany({
+  nome: "Big Mac",
+}, {
   $unset: { curtidas: 1 },
 });
 
