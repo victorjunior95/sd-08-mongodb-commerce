@@ -1,0 +1,1 @@
+db.produtos.count({ inggretientes: { $size: 4 } });
