@@ -1,6 +1,6 @@
 db.produtos.updateMany(
     {},
-    { $addToSet: { valorUnitario: NumberDecimal("0.00") } },
+    { $set: { valorUnitario: NumberDecimal("0.00") } },
 );
 db.produtos.find(
     {},
