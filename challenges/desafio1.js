@@ -1,3 +1,3 @@
-db.produtos.updateMany({}, { $set: { criadoPor: "Ronald MacDonald" } });
+db.produtos.updateMany({}, { $set: { criadoPor: "Ronald McDonald" } });
 
-db.produtos.updateMany({}, { nome: 1, criadoPor: 1 });
+db.produtos.find({}, { _id: false, nome: true, criadoPor: true });
